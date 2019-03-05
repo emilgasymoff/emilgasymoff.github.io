@@ -47,7 +47,7 @@ img{
 }
 
 
-/*Text*/
+/*Типография*/
 a{
 	color: #000;
 	text-transform: 0;
@@ -114,24 +114,23 @@ p{
 
 
 /*HEADER*/
-.header .logo_and_menu{
+.navigation-menu{
 	position: absolute;
 	z-index:2;
 	top:70px;
 }
 
-.header .menu{
+.menu{
 	margin:0;
 	padding: 0;
 	list-style: none;
 }
-
-.header .menu li{
+.menu__item{
 	margin:0;
 	padding:0;
 }
 
-.header .menu li a{
+.menu-item__link{
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 	font-size: 16px;
@@ -139,13 +138,19 @@ p{
 	margin-left: 30px;
 }
 
-.slider_description{
+.main-banner{
+	height: 100vh;
+	background-image: url('../img/banner/slider.jpeg');
+	background-size: cover;
+}
+
+.main-banner__description{
 	padding:0;
 	position: absolute;
 	top: 430px;
 }
 
-.header .slider h1{
+.main-banner__heading{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 50px;
 	font-weight: 500;
@@ -156,7 +161,7 @@ p{
 	text-align: center;
 }
 
-.header .slider p{
+.main-banner__content{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
@@ -175,7 +180,7 @@ p{
 	margin-top: 120px;
 }
 
-.services__description p{
+.services__description .description__content{
 	color: #000;
 	font-size: 18px;
 	text-align: center;
@@ -205,15 +210,15 @@ p{
 	box-shadow: 0px 10px 15px 0px #c6c6c6;
 }
 
-.services__item-icon{
+.services__item .item-icon{
 	margin-top: 40px;
 }
 
-.services__item h3{
+.services__item .item__heading{
 	margin-top: 25px;
 }
 
-.services__item p{
+.services__item .item__content{
 	font-size: 16px;
 	line-height: 32px;
 	letter-spacing: 0;
@@ -225,7 +230,7 @@ p{
 	margin-top: 115px;
 }
 
-.portfolio__description p{
+.portfolio__description .description__content{
 	color: #000;
 	font-size: 18px;
 	text-align: center;
@@ -245,7 +250,7 @@ p{
 	box-shadow: 0px 10px 15px 0px #bbbbbb;
 }
 
-.portfolio__load-more-button{
+.portfolio__load-button{
 	margin: 100px 0 125px 0;
 }
 
@@ -255,7 +260,7 @@ p{
 	padding: 0;
 }
 
-.team-members__description p{
+.team-members .description__content{
 	margin: 20px 0 0 0;
 	padding:0;
 }
@@ -281,7 +286,7 @@ p{
 	height: 27%;
 }
 
-.team-members__info-name{
+.info__name{
 	margin:0;
 	padding:0;
 	font-size: 20px;
@@ -290,7 +295,7 @@ p{
 	letter-spacing: 0.025em;
 }
 
-.team-members__info-socials{
+.info__socials{
 	width: 49%;
 	margin:0 auto;
 	padding:0;
@@ -299,12 +304,12 @@ p{
 	justify-content: space-between;
 }
 
-.team-members__info-socials a{
+.team-members .info-socials__link{
 	font-size: 18px;
 	color:#26af5f;
 }
 
-.team-members__info-socials a:hover{
+.team-members .info-socials__link:hover{
 	color:#00c0ff;
 }
 
