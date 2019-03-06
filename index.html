@@ -37,19 +37,19 @@
 					<div class="collapse navbar-collapse" id="navbarNavDropdown">
 						<ul class="navbar-nav ml-lg-auto">
 							<li class="nav-item active">
-								<a class="mainBanner__link nav-link" href="#">главная</a>
+								<a class="nav-link nav-link--mainBanner" href="#mainBanner">главная</a>
 							</li>
 							<li class="nav-item">
-								<a class="aboutMe__link nav-link" href="#aboutMe">Обо мне</a>
+								<a class="nav-link nav-link--aboutMe" href="#aboutMe">Обо мне</a>
 							</li>
 							<li class="nav-item">
-								<a class="usedTechnologies__link nav-link" href="#usedTechnologies">Технологии</a>
+								<a class="nav-link nav-link--usedTechnologies" href="#usedTechnologies">Технологии</a>
 							</li>
 							<li class="nav-item">
-								<a class="workExamples__link nav-link" href="#workExamples">мои работы</a>
+								<a class="nav-link nav-link--workExamples" href="#workExamples">мои работы</a>
 							</li>
 							<li class="nav-item">
-								<a class="contacts__link nav-link" href="#contacts">контакты</a>
+								<a class="nav-link nav-link--contacts" href="#contacts">контакты</a>
 							</li>
 						</ul>
 					</div>
@@ -90,7 +90,7 @@
 		<section id="aboutMe" class="aboutMe">
 			<div class="container">
 				<div class="row">
-					<div class="col col-lg-8 mx-0 mx-lg-auto d-flex flex-column align-items-center">
+					<div class="col col-lg-5 mx-0 mx-lg-auto d-flex flex-column align-items-center">
 						<span class="horizontalLine horizontalLine--dark"></span>
 						<h2 class="section__heading">
 							Обо Мне
@@ -100,19 +100,19 @@
 				</div>
 				<div class="infoPannel row">
 					<div class="infoPannel__item col-12 col-lg mx-0 mx-lg-2 my-2">
-						<i class="fas fa-user-alt"></i>
+						<i class="infoPannelItem__icon fas fa-user-alt"></i>
 						<h3 class="infoPannelItem__heading">Личная информация</h3>
 						<p class="infoPannelItem__content">Привет! Меня зовут Эмиль. Мне 22 года. Занимаюсь вёрсткой сайтов. Могу сверстать с PSD макета, а также редактировать уже готовые проекты по желанию заказчика. Взятые заказы сдаются строго в обещанные сроки. </p>
 					</div>
 					<div class="infoPannel__item col-12 col-lg mx-0 mx-lg-2 my-2">
-						<i class="fas fa-server"></i>
+						<i class="infoPannelItem__icon fas fa-server"></i>
 						<h3 class="infoPannelItem__heading">Знания</h3>
 						<p class="infoPannelItem__content">
 							Владения такими языками как HTML, CSS, Javascript (+J-Query), PHP, а также СУБД MySQL. Способность работать с фреймворком Bootstrap и технологией FlexBox. Oпыт работы с графическим редактором PhotoShop CC.
 						</p>
 					</div>
 					<div class="infoPannel__item col-12 col-lg mx-0 mx-lg-2 my-2">
-						<i class="fas fa-file"></i>
+						<i class="infoPannelItem__icon fas fa-file"></i>
 						<h3 class="infoPannelItem__heading">Резюме</h3>
 						<p class="infoPannelItem__content">
 							С более обширной информацией обо мне вы можете в моем резюме, кликнув по значку загрузки.
@@ -128,7 +128,7 @@
 		<section id="usedTechnologies" class="usedTechnologies">
 			<div class="container">
 				<div class="row">
-					<div class="col d-flex flex-column align-items-center">
+					<div class="col col-lg-5 mx-0 mx-lg-auto d-flex flex-column align-items-center">
 						<span class="horizontalLine"></span>
 						<h2 class="section__heading section__heading--white">
 							Используюмые <br> технологии 
@@ -176,7 +176,7 @@
 		<section id="workExamples" class="workExamples">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-lg d-flex flex-column align-items-center">
+					<div class="col col-lg-5 mx-0 mx-lg-auto d-flex flex-column align-items-center">
 						<span class="horizontalLine horizontalLine--dark"></span>
 						<h2 class="section__heading">
 							Примеры моих <br>работ
@@ -211,18 +211,18 @@
 		<section id="contacts" class="contacts">
 			<div class="container">
 				<div class="row">
-					<div class="col d-flex flex-column align-items-center">
+					<div class="col col-lg-5 mx-0 mx-lg-auto d-flex flex-column align-items-center">
 						<span class="horizontalLine"></span>
 						<h2 class="section__heading section__heading--white">Контакты</h2>
 						<span class="horizontalLine"></span>
 					</div>
 				</div>
 				<div class="contacts__phoneNumbers row">
-					<div class="phoneNumbers-item col-12 col-lg my-2 my-lg-5 m-lg-5">
-						<i class="phoneNumbers__icon phoneNumbers__icon--phoneIcon fas fa-phone"> <span>+994-50-342-99-45</span></i>
+					<div class="phoneNumbers__item col-12 col-lg my-2 my-lg-5 m-lg-5">
+						<i class="phoneNumbers__icon phoneNumbers__icon--phoneIcon fas fa-phone"> <span class="phoneNumbers__digits">+994-50-342-99-45</span></i>
 					</div>
-					<div class="phoneNumbers-item col-12 col-lg my-2 my-lg-5 m-lg-5">
-						<i class="phoneNumbers__icon phoneNumbers__icon--whatsApp fab fa-whatsapp"> <span>+994-50-342-99-45</span></i>
+					<div class="phoneNumbers__item col-12 col-lg my-2 my-lg-5 m-lg-5">
+						<i class="phoneNumbers__icon phoneNumbers__icon--whatsApp fab fa-whatsapp"> <span class="phoneNumbers__digits">+994-50-342-99-45</span></i>
 					</div>
 				</div>
 				<div class="socials row d-flex justify-content-center">
@@ -266,8 +266,8 @@
 		<footer id="footer" class="footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-8 mx-auto py-3">
-						<p class="footer__content text-center"> &copy; Created by Emil Gasymoff. Bootstrap ver.4 (2019)</p>
+					<div class="col-8 mx-auto">
+						<p class="footer__content text-center m-2"> &copy; Created by Emil Gasymoff. Bootstrap ver.4 (2019)</p>
 					</div>
 				</div>
 			</div>

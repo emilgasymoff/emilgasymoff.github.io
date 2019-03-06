@@ -1,6 +1,7 @@
 ﻿/*Содержимое файла: 
 preloaderStyles;------------------------------------
 основные стили;-------------------------------------
+animations;-----------------------------------------
 media-querries;-------------------------------------*/
 
 /*Preloader*/
@@ -34,19 +35,10 @@ media-querries;-------------------------------------*/
 	100%{transform: rotate(360deg);}
 }
 
-
-
-/*Спецификации*/
-body{
-	font-family: 'Roboto-Condensed-Regular', sans-serif;
-}
-
-section{
-	padding: 60px 0 60px 0;
-}
+/*Типография----------------------------------------------------------------*/
 
 p{
-	width: 100%;
+	width: 100%; /*для IE*/
 }
 
 a{
@@ -65,21 +57,31 @@ h1, h2, h3, h4, h5, h6{
 	padding:0;
 }
 
+/*Спецификации----------------------------------------------------------------*/
+
+body{
+	font-family: 'Roboto-Condensed-Regular', sans-serif;
+}
+
+section{
+	padding: 60px 0 60px 0;
+}
+
 .horizontalLine{
 	display:block;
 	background-color: white;
-	height: 10px;
-	width: 70%;
+	height: 4px;
+	width: 100%;
 }
 
 .horizontalLine--dark{
-	background-color: rgba(0,0,0, .6);
+	background-color: rgba(0,0,0,.6);
 }
 
 .section__heading {
 	font-family: 'Roboto-Condensed-Bold';
 	text-align: center;
-	font-size: 60px;
+	font-size: 40px;
 	text-transform: uppercase;
 	white-space: nowrap;
 }
@@ -96,16 +98,17 @@ h1, h2, h3, h4, h5, h6{
 	border: 10px solid rgba(0,0,0,.5);
 }
 
+
 /*Header-------------------------------------------------------------------*/
 .header{
 }
 
 .navbar{
-	background-color: rgba(153,153,153,.8);
+	background-color: rgba(0,0,0,.7);
 }
 
 .nav-link{
-	font-size: 23px;
+	font-size: 20px;
 }
 
 /*MainBanner---------------------------------------------------------------*/
@@ -190,12 +193,11 @@ h1, h2, h3, h4, h5, h6{
 	align-content: center;
 	flex-grow: 1;
 	background-color: white;
-	border: 5px solid #fc635e;
+	border: 3px solid #fc635e;
 	padding: 20px 15px;
 }
 
-
-.infoPannel__item i{
+.infoPannelItem__icon{
 	font-size: 50px;
 	color: #fc635e;
 }
@@ -217,31 +219,9 @@ h1, h2, h3, h4, h5, h6{
 	animation: clickToResume 1s ease infinite;
 }
 
-		@-webkit-keyframes clickToResume {
-			0% { transform: scale(1); }
-			50% { transform: scale(1.2); }
-			100% { transform: scale(1); }
-		}
-		@-o-keyframes clickToResume {
-			0% { transform: scale(1); }
-			50% { transform: scale(1.2); }
-			100% { transform: scale(1); }
-		}
-		@-moz-keyframes clickToResume {
-			0% { transform: scale(1); }
-			50% { transform: scale(1.2); }
-			100% { transform: scale(1); }
-		}
-		@keyframes clickToResume {
-			0% { transform: scale(1); }
-			50% { transform: scale(1.2); }
-			100% { transform: scale(1); }
-		}
-
 .infoPannelItem__click:hover{
 	color: #06ff00;
 }
-
 
 /*UsedTechnologies---------------------------------------------------------*/
 .usedTechnologies {
@@ -272,22 +252,6 @@ h1, h2, h3, h4, h5, h6{
 	animation: icon__rotate 1s ease-in-out infinite;
 }
 
-@-webkit-keyframes icon__rotate {
-	from{transform: rotateY(0deg);}
-	to{transform: rotateY(360deg);}
-}
-@-o-keyframes icon__rotate {
-	from{totransform: rotateY(0deg);}
-	to{transform: rotateY(360deg);}
-}
-@-moz-keyframes icon__rotate {
-	from{transform: rotateY(0deg);}
-	to{transform: rotateY(360deg);}
-}
-@keyframes icon__rotate {
-	from{transform: rotateY(0deg);}
-	to{transform: rotateY(360deg);}
-}
 
 .technologiesPannel__item:hover .fa-html5{
 	color:orange;
@@ -312,8 +276,6 @@ h1, h2, h3, h4, h5, h6{
 .technologiesPannel__item:hover .fa-pied-piper-pp{
 	color:#005aff;
 }
-
-
 
 .technologiesPannel__item--blue{
 	background-color: #00baff;
@@ -384,23 +346,6 @@ h1, h2, h3, h4, h5, h6{
 	z-index: +10;
 	animation: appear 1s ease 1;
 }
-		@-webkit-keyframes appear {
-			from {background-color:rgba(0,186,255,0.0);}
-			to { background-color: rgba(0,186,255,0.8); }
-		}
-		@-o-keyframes appear {
-			from { background-color:rgba(0,186,255,0.0); }
-			to { background-color: rgba(0,186,255,0.8); }
-		}
-		@-moz-keyframes appear {
-			from { background-color:rgba(0,186,255,0.0); }
-			to { background-color: rgba(0,186,255,0.8); }
-		}
-		@keyframes appear {
-			from { background-color:rgba(0,186,255,0.0); }
-			to { background-color: rgba(0,186,255,0.8); }
-		}
-
 
 
 /*Contacts--------------------------------------------------------------*/
@@ -414,14 +359,14 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-.phoneNumbers-item{
+.phoneNumbers__item{
 	font-family: "Arial", sans-serif;
 	font-size: 50px;
 	text-align: center;
 	color: gray;
 }
 
-.phoneNumbers__icon span{
+.phoneNumbers__digits{
 	font-size: 30px;
 	font-weight: 400;
 	color: gray;
@@ -454,162 +399,239 @@ h1, h2, h3, h4, h5, h6{
 	animation-delay: 0s;
 	animation-fill-mode: forwards;
 }
-		@-webkit-keyframes vk-icon-animation {
-			0%{transform: rotateY(0deg);}
-			50%{transform: rotateY(90deg);color:black;}
-			100%{transform: rotateY(0deg);color:#006cff;}
-		}
-		@-o-keyframes vk-icon-animation {
-			0%{transform: rotateY(0deg);}
-			50%{transform: rotateY(90deg);color:black;}
-			100%{transform: rotateY(0deg);color:#006cff;}
-		}
-		@-moz-keyframes vk-icon-animation {
-			0%{transform: rotateY(0deg);}
-			50%{transform: rotateY(90deg);color:black;}
-			100%{transform: rotateY(0deg);color:#006cff;}
-		}
-		@keyframes vk-icon-animation {
-			0%{transform: rotateY(0deg);}
-			50%{transform: rotateY(90deg);color:black;}
-			100%{transform: rotateY(0deg);color:#006cff;}
-		}
-
-
 .socials__icon--twitter:hover {
 	animation: twitter-icon-animation 0.5s ease-in-out 1;
 	animation-delay: 0s;
 	animation-fill-mode: forwards;
 }
-		@-webkit-keyframes twitter-icon-animation {
-			0%{transform: rotate(0deg);}
-			50%{transform: rotate(90deg);color:black;}
-			100%{transform: rotate(0deg);color:#00aeff;}
-		}
-		@-o-keyframes twitter-icon-animation {
-			0%{transform: rotate(0deg);}
-			50%{transform: rotate(90deg);color:black;}
-			100%{transform: rotate(0deg);color:#00aeff;}
-		}
-		@-moz-keyframes twitter-icon-animation {
-			0%{transform: rotate(0deg);}
-			50%{transform: rotate(90deg);color:black;}
-			100%{transform: rotate(0deg);color:#00aeff;}
-		}
-		@keyframes twitter-icon-animation {
-			0%{transform: rotate(0deg);}
-			50%{transform: rotate(90deg);color:black;}
-			100%{transform: rotate(0deg);color:#00aeff;}
-		}
 
 .socials__icon--mail:hover {
 	animation: mail-icon-animation 0.5s ease-in-out 1;
 	animation-delay: 0s;
 	animation-fill-mode: forwards;
 }
-		@-webkit-keyframes mail-icon-animation {
-			0%{transform: rotateX(0deg);}
-			50%{transform: rotateX(90deg);color:black;}
-			100%{transform: rotateX(0deg);color:#ff4141;}
-		}
-		@-o-keyframes mail-icon-animation {
-			0%{transform: rotateX(0deg);}
-			50%{transform: rotateX(90deg);color:black;}
-			100%{transform: rotateX(0deg);color:#ff4141;}
-		}
-		@-moz-keyframes mail-icon-animation {
-			0%{transform: rotateX(0deg);}
-			50%{transform: rotateX(90deg);color:black;}
-			100%{transform: rotateX(0deg);color:#ff4141;}
-		}
-		@keyframes mail-icon-animation {
-			0%{transform: rotateX(0deg);}
-			50%{transform: rotateX(90deg);color:black;}
-			100%{transform: rotateX(0deg);color:#ff4141;}
-		}
 
 .socials__icon--facebook:hover {
 	animation: facebook-icon-animation 0.5180s ease-in-out 1;
 	animation-delay: 0s;
 	animation-fill-mode: forwards;
 }
-		@-webkit-keyframes facebook-icon-animation {
-			0%{transform: rotateX(0deg);}
-			50%{transform: rotateX(90deg);color:black;}
-			100%{transform: rotateX(0deg);color:#3158ff;}
-		}
-		@-o-keyframes facebook-icon-animation {
-			0%{transform: rotateX(0deg);}
-			50%{transform: rotateX(90deg);color:black;}
-			100%{transform: rotateX(0deg);color:#3158ff;}
-		}
-		@-moz-keyframes facebook-icon-animation {
-			0%{transform: rotateX(0deg);}
-			50%{transform: rotateX(90deg);color:black;}
-			100%{transform: rotateX(0deg);color:#3158ff;}
-		}
-		@keyframes facebook-icon-animation {
-			0%{transform: rotateX(0deg);}
-			50%{transform: rotateX(90deg);color:black;}
-			100%{transform: rotateX(0deg);color:#3158ff;}
-		}
 
 .socials__icon--googlePlus:hover {
 	animation: googlePlus-icon-animation 0.5s ease-in-out 1;
 	animation-delay: 0s;
 	animation-fill-mode: forwards;
 }
-		@-webkit-keyframes googlePlus-icon-animation {
-			0%{transform: rotateY(0deg);}
-			50%{transform: rotateY(90deg);color:black;}
-			100%{transform: rotateY(0deg);color:#ff3131;}
-		}
-		@-o-keyframes googlePlus-icon-animation {
-			0%{transform: rotateY(0deg);}
-			50%{transform: rotateY(90deg);color:black;}
-			100%{transform: rotateY(0deg);color:#ff3131;}
-		}
-		@-moz-keyframes googlePlus-icon-animation {
-			0%{transform: rotateY(0deg);}
-			50%{transform: rotateY(90deg);color:black;}
-			100%{transform: rotateY(0deg);color:#ff3131;}
-		}
-		@keyframes googlePlus-icon-animation {
-			0%{transform: rotate(0deg);}
-			50%{transform: rotate(90deg);color:black;}
-			100%{transform: rotate(0deg);color:#ff3131;}
-		}
 
 .socials__icon--painterest:hover {
 	animation: painterest-icon-animation 0.5s ease-in-out 1;
 	animation-delay: 0s;
 	animation-fill-mode: forwards;
 }
-		@-webkit-keyframes painterest-icon-animation {
-			0%{transform: rotateY(0deg);}
-			50%{transform: rotateY(90deg);color:black;}
-			100%{transform: rotateY(0deg);color:#fff;}
-		}
-		@-o-keyframes painterest-icon-animation {
-			0%{transform: rotateY(0deg);}
-			50%{transform: rotateY(90deg);color:black;}
-			100%{transform: rotateY(0deg);color:#fff;}
-		}
-		@-moz-keyframes painterest-icon-animation {
-			0%{transform: rotateY(0deg);}
-			50%{transform: rotateY(90deg);color:black;}
-			100%{transform: rotateY(0deg);color:#fff;}
-		}
-		@keyframes painterest-icon-animation {
-			0%{transform: rotateY(0deg);}
-			50%{transform: rotateY(90deg);color:black;}
-			100%{transform: rotateY(0deg);color:#fff;}
-		}
 
 /*Footer-----------------------------------------------------------------*/
 
 .footer{
+	background-color: rgba(0,0,0,.8);
+	color: #fff;
 }
+
+
+/*Animations--------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------*/
+
+/*clickToResume*/
+
+@-webkit-keyframes clickToResume {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.2); }
+	100% { transform: scale(1); }
+}
+@-o-keyframes clickToResume {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.2); }
+	100% { transform: scale(1); }
+}
+@-moz-keyframes clickToResume {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.2); }
+	100% { transform: scale(1); }
+}
+@keyframes clickToResume {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.2); }
+	100% { transform: scale(1); }
+}
+
+/*Icon-rotate*/
+
+@-webkit-keyframes icon__rotate {
+	from{transform: rotateY(0deg);}
+	to{transform: rotateY(360deg);}
+}
+@-o-keyframes icon__rotate {
+	from{totransform: rotateY(0deg);}
+	to{transform: rotateY(360deg);}
+}
+@-moz-keyframes icon__rotate {
+	from{transform: rotateY(0deg);}
+	to{transform: rotateY(360deg);}
+}
+@keyframes icon__rotate {
+	from{transform: rotateY(0deg);}
+	to{transform: rotateY(360deg);}
+}
+
+/*Appear*/
+
+@-webkit-keyframes appear {
+	from {background-color:rgba(0,186,255,0.0);}
+	to { background-color: rgba(0,186,255,0.8); }
+}
+@-o-keyframes appear {
+	from { background-color:rgba(0,186,255,0.0); }
+	to { background-color: rgba(0,186,255,0.8); }
+}
+@-moz-keyframes appear {
+	from { background-color:rgba(0,186,255,0.0); }
+	to { background-color: rgba(0,186,255,0.8); }
+}
+@keyframes appear {
+	from { background-color:rgba(0,186,255,0.0); }
+	to { background-color: rgba(0,186,255,0.8); }
+}
+
+/*Socials Animations*/
+
+@-webkit-keyframes vk-icon-animation {
+	0%{transform: rotateY(0deg);}
+	50%{transform: rotateY(90deg);color:black;}
+	100%{transform: rotateY(0deg);color:#006cff;}
+}
+@-o-keyframes vk-icon-animation {
+	0%{transform: rotateY(0deg);}
+	50%{transform: rotateY(90deg);color:black;}
+	100%{transform: rotateY(0deg);color:#006cff;}
+}
+@-moz-keyframes vk-icon-animation {
+	0%{transform: rotateY(0deg);}
+	50%{transform: rotateY(90deg);color:black;}
+	100%{transform: rotateY(0deg);color:#006cff;}
+}
+@keyframes vk-icon-animation {
+	0%{transform: rotateY(0deg);}
+	50%{transform: rotateY(90deg);color:black;}
+	100%{transform: rotateY(0deg);color:#006cff;}
+}
+
+@-webkit-keyframes twitter-icon-animation {
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(90deg);color:black;}
+	100%{transform: rotate(0deg);color:#00aeff;}
+}
+@-o-keyframes twitter-icon-animation {
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(90deg);color:black;}
+	100%{transform: rotate(0deg);color:#00aeff;}
+}
+@-moz-keyframes twitter-icon-animation {
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(90deg);color:black;}
+	100%{transform: rotate(0deg);color:#00aeff;}
+}
+@keyframes twitter-icon-animation {
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(90deg);color:black;}
+	100%{transform: rotate(0deg);color:#00aeff;}
+}
+
+@-webkit-keyframes mail-icon-animation {
+	0%{transform: rotateX(0deg);}
+	50%{transform: rotateX(90deg);color:black;}
+	100%{transform: rotateX(0deg);color:#ff4141;}
+}
+@-o-keyframes mail-icon-animation {
+	0%{transform: rotateX(0deg);}
+	50%{transform: rotateX(90deg);color:black;}
+	100%{transform: rotateX(0deg);color:#ff4141;}
+}
+@-moz-keyframes mail-icon-animation {
+	0%{transform: rotateX(0deg);}
+	50%{transform: rotateX(90deg);color:black;}
+	100%{transform: rotateX(0deg);color:#ff4141;}
+}
+@keyframes mail-icon-animation {
+	0%{transform: rotateX(0deg);}
+	50%{transform: rotateX(90deg);color:black;}
+	100%{transform: rotateX(0deg);color:#ff4141;}
+}
+
+@-webkit-keyframes facebook-icon-animation {
+	0%{transform: rotateX(0deg);}
+	50%{transform: rotateX(90deg);color:black;}
+	100%{transform: rotateX(0deg);color:#3158ff;}
+}
+@-o-keyframes facebook-icon-animation {
+	0%{transform: rotateX(0deg);}
+	50%{transform: rotateX(90deg);color:black;}
+	100%{transform: rotateX(0deg);color:#3158ff;}
+}
+@-moz-keyframes facebook-icon-animation {
+	0%{transform: rotateX(0deg);}
+	50%{transform: rotateX(90deg);color:black;}
+	100%{transform: rotateX(0deg);color:#3158ff;}
+}
+@keyframes facebook-icon-animation {
+	0%{transform: rotateX(0deg);}
+	50%{transform: rotateX(90deg);color:black;}
+	100%{transform: rotateX(0deg);color:#3158ff;}
+}
+
+@-webkit-keyframes googlePlus-icon-animation {
+	0%{transform: rotateY(0deg);}
+	50%{transform: rotateY(90deg);color:black;}
+	100%{transform: rotateY(0deg);color:#ff3131;}
+}
+@-o-keyframes googlePlus-icon-animation {
+	0%{transform: rotateY(0deg);}
+	50%{transform: rotateY(90deg);color:black;}
+	100%{transform: rotateY(0deg);color:#ff3131;}
+}
+@-moz-keyframes googlePlus-icon-animation {
+	0%{transform: rotateY(0deg);}
+	50%{transform: rotateY(90deg);color:black;}
+	100%{transform: rotateY(0deg);color:#ff3131;}
+}
+@keyframes googlePlus-icon-animation {
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(90deg);color:black;}
+	100%{transform: rotate(0deg);color:#ff3131;}
+}
+
+@-webkit-keyframes painterest-icon-animation {
+	0%{transform: rotateY(0deg);}
+	50%{transform: rotateY(90deg);color:black;}
+	100%{transform: rotateY(0deg);color:#fff;}
+}
+@-o-keyframes painterest-icon-animation {
+	0%{transform: rotateY(0deg);}
+	50%{transform: rotateY(90deg);color:black;}
+	100%{transform: rotateY(0deg);color:#fff;}
+}
+@-moz-keyframes painterest-icon-animation {
+	0%{transform: rotateY(0deg);}
+	50%{transform: rotateY(90deg);color:black;}
+	100%{transform: rotateY(0deg);color:#fff;}
+}
+@keyframes painterest-icon-animation {
+	0%{transform: rotateY(0deg);}
+	50%{transform: rotateY(90deg);color:black;}
+	100%{transform: rotateY(0deg);color:#fff;}
+}
+
 
 
 /*MEDIA-------------------------------------------------------------------------------
@@ -617,6 +639,103 @@ h1, h2, h3, h4, h5, h6{
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 1200px){
+	/*Спецификации*/
+	section{
+		padding: 30px 0 30px 0;
+	}
+
+	.horizontalLine{
+		display:block;
+		background-color: white;
+		height: 7px;
+	}
+
+	.horizontalLine--dark{
+		background-color: rgba(0,0,0, .6);
+	}
+
+	.section__heading {
+		font-family: 'Roboto-Condensed-Bold';
+		text-align: center;
+		font-size: 40px;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+
+	.section__heading--white{
+		color: #fff;
+	}
+
+	/*Header-------------------------------------------------------------------*/
+	.nav-link{
+		font-size: 20px;
+	}
+
+	/*MainBanner---------------------------------------------------------------*/
+	.mainBanner__heading{
+		border: 8px solid rgba(255,255,255,.5);
+	}
+
+	.h1{
+		font-size: 47px;
+	}
+
+	.h1__firstPart{
+		font-size: 73px;
+	}
+
+	/*About-Me---------------------------------------------------------------------*/
+	.infoPannel{
+		margin: 20px;
+	}
+
+	.infoPannelItem__icon{
+		font-size: 40px;
+	}
+
+	.infoPannelItem__heading{
+		margin: 12px 0 0 0;
+	}
+
+	/*UsedTechnologies---------------------------------------------------------*/
+	.technoPannelItem__content{
+		margin: 18px 0 0 0;
+	}
+
+	/*WorkExamples---------------------------------------------------------*/
+
+	.workExamples{
+	}
+
+	.workExaples__list{
+		margin-top: 40px;
+	}
+
+	.examples__item{
+		box-sizing: border-box;
+		border: 1px solid #999999;
+		cursor: pointer;
+		padding: 0;
+	}
+
+	.examples__item:hover{
+		box-shadow: 0px 7px 20px 3px #8f8f8f;
+	}
+	/*Contacts--------------------------------------------------------------*/
+
+	.contacts__phoneNumbers{
+		margin-top: 20px;
+	}
+
+	.socials__link{
+		font-size: 25px;
+		color:gray;
+		margin: 0 15px;
+	}
+}
 
 @media screen and (max-width: 576px){
 	/*Спецификации*/
@@ -628,11 +747,10 @@ h1, h2, h3, h4, h5, h6{
 		display:block;
 		background-color: white;
 		height: 5px;
-		width: 90%;
 	}
 
 	.horizontalLine--dark{
-		background-color: rgba(0,0,0, .6);
+		background-color: rgba(0,0,0,.6);
 	}
 
 	.section__heading {
@@ -675,14 +793,14 @@ h1, h2, h3, h4, h5, h6{
 		margin: 20px;
 	}
 
-	.infoPannel__item i{
+	.infoPannelItem__icon{
 		font-size: 40px;
 	}
 
 	.infoPannelItem__heading{
-	font-size: 23px;
+	font-size: 22px;
 	margin-top: 12px;
-}
+	}
 
 	/*UsedTechnologies---------------------------------------------------------*/
 	.technoPannelItem__content{
@@ -703,277 +821,13 @@ h1, h2, h3, h4, h5, h6{
 		margin-top: 20px;
 	}
 
-	.phoneNumbers__icon span{
+	.phoneNumbers__digits{
 	font-size: 20px;
-}
+	}
 
 	.socials__link{
 		font-size: 25px;
 		color:gray;
 		margin: 0 15px;
 	}
-}
-
-
-@media screen and (min-width: 577px){
-	/*Спецификации*/
-	section{
-		padding: 30px 0 30px 0;
-	}
-
-	.horizontalLine{
-		display:block;
-		background-color: white;
-		height: 7px;
-		width: 80%;
-	}
-
-	.horizontalLine--dark{
-		background-color: rgba(0,0,0, .6);
-	}
-
-	.section__heading {
-		font-family: 'Roboto-Condensed-Bold';
-		text-align: center;
-		font-size: 40px;
-		text-transform: uppercase;
-		white-space: nowrap;
-	}
-
-	.section__heading--white{
-		color: #fff;
-	}
-
-	/*Header-------------------------------------------------------------------*/
-	.navbar{
-		background-color: rgba(46,46,46,.95);
-	}
-
-	.nav-link{
-		font-size: 23px;
-	}
-
-
-	/*MainBanner---------------------------------------------------------------*/
-	.mainBanner__heading{
-		border: 8px solid rgba(255,255,255,.5);
-	}
-
-	.h1{
-		font-size: 47px;
-	}
-
-	.h1__firstPart{
-		font-size: 73px;
-	}
-
-	/*About-Me---------------------------------------------------------------------*/
-	.infoPannel{
-		margin: 20px;
-	}
-
-	.infoPannel__item i{
-		font-size: 40px;
-	}
-
-	.infoPannelItem__heading{
-		margin: 12px 0 0 0;
-	}
-
-	/*UsedTechnologies---------------------------------------------------------*/
-	.technoPannelItem__content{
-		margin: 18px 0 0 0;
-	}
-
-	/*WorkExamples---------------------------------------------------------*/
-
-	.workExamples{
-	}
-
-	.workExaples__list{
-		margin-top: 40px;
-	}
-
-	.examples__item{
-		box-sizing: border-box;
-		border: 1px solid #999999;
-		cursor: pointer;
-		padding: 0;
-	}
-
-	.examples__item:hover{
-		box-shadow: 0px 7px 20px 3px #8f8f8f;
-	}
-
-	.examplesItem__info{
-	/*Contacts--------------------------------------------------------------*/
-	.contacts__phoneNumbers{
-		margin-top: 20px;
-	}
-
-	.socials__link{
-		font-size: 25px;
-		color:gray;
-		margin: 0 15px;}
-}
-	
-
-@media screen and (min-width: 1200px){
-	/*Спецификации*/
-	section{
-		padding: 60px 0 60px 0;
-	}
-
-	.horizontalLine{
-		display:block;
-		background-color: white;
-		height: 10px;
-		width: 70%;
-	}
-
-	.horizontalLine--dark{
-		background-color: rgba(0,0,0, .6);
-	}
-
-	.section__heading {
-		font-family: 'Roboto-Condensed-Bold';
-		text-align: center;
-		font-size: 60px;
-		text-transform: uppercase;
-		white-space: nowrap;
-	}
-
-	.section__heading--white{
-		color: #fff;
-	}
-
-		/*Header-------------------------------------------------------------------*/
-	.navbar{
-		background-color: rgba(153,153,153,.8);
-	}
-
-	.nav-link{
-		font-size: 23px;
-	}
-
-
-		/*MainBanner---------------------------------------------------------------*/
-	.mainBanner__heading{
-		border: 10px solid rgba(255,255,255,.5);
-	}
-
-	.h1{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		font-size: 60px;
-		color:white;
-		text-transform: uppercase;
-	}
-
-	.h1__firstPart{
-		font-size: 100px;
-		color: #fc635e;
-	}
-
-
-		/*About-Me---------------------------------------------------------------------*/
-	.infoPannel__item{
-		border: 5px solid #fc635e;
-		padding: 20px 15px;
-	}
-
-
-	.infoPannel__item i{
-		font-size: 50px;
-	}
-
-	.infoPannelItem__heading{
-		font-size: 28px;
-		margin-top: 30px;
-	}
-
-		/*UsedTechnologies---------------------------------------------------------*/
-	.technoPannelItem__content{
-		font-size: 18px;
-		margin: 35px 0 0 0;
-	}
-
-
-		/*WorkExamples---------------------------------------------------------*/
-	.workExamples{
-	}
-
-	.workExaples__list{
-		margin: 40px 0 0 0;
-	}
-
-	.examples__item{
-		box-sizing: border-box;
-		border: 1px solid #999999;
-		cursor: pointer;
-		padding: 0;
-	}
-
-	.examples__item:hover{
-		box-shadow: 0px 7px 20px 3px #8f8f8f;
-	}
-
-	.examplesItem__info{
-		display: block;
-		width: 100%;
-		height: 100%;
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: rgba(0,186,255,0.8);
-		position:absolute;
-		z-index: -1;
-		margin: 0;
-		padding: 0;
-	}
-
-	.examplesItem__moreIcon{
-		font-size: 70px;
-		color: #fff;
-	}
-
-	.examples__item:hover .examplesItem__info{
-		z-index: +10;
-		animation: appear 1s ease 1;
-	}
-		@-webkit-keyframes appear {
-			from {background-color:rgba(0,186,255,0.0);}
-			to { background-color: rgba(0,186,255,0.8); }
-		}
-		@-o-keyframes appear {
-			from { background-color:rgba(0,186,255,0.0); }
-			to { background-color: rgba(0,186,255,0.8); }
-		}
-		@-moz-keyframes appear {
-			from { background-color:rgba(0,186,255,0.0); }
-			to { background-color: rgba(0,186,255,0.8); }
-		}
-		@keyframes appear {
-			from { background-color:rgba(0,186,255,0.0); }
-			to { background-color: rgba(0,186,255,0.8); }
-		}
-
-
-
-
-	/*Contacts--------------------------------------------------------------*/
-	.contacts__phoneNumbers{
-		margin-top: 20px;
-	}
-
-	.socials__link{
-	font-size: 50px;
-	color:gray;
-	margin: 0 15px;
-}
 }

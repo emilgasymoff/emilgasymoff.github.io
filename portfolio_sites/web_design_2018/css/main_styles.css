@@ -1,3 +1,9 @@
+/*Содержание файла:
+Preloader;----------------------------------------------------------------------
+Styles;-------------------------------------------------------------------------
+Animations;---------------------------------------------------------------------
+Media;--------------------------------------------------------------------------*/
+
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
@@ -31,21 +37,6 @@
 	0%{transform: rotate(0deg);}
 	100%{transform: rotate(360deg);}
 }
-
-/*Спецификации*/
-
-body{
-	margin:0;
-	padding:0;
-	font-family: 'Montserrat', sans-serif;
-}
-
-img{
-	display: block;
-	margin:0;
-	padding: 0;
-}
-
 
 /*Типография*/
 a{
@@ -111,7 +102,19 @@ p{
 	text-align: center;
 }
 
+/*Спецификации*/
 
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+img{
+	display: block;
+	margin:0;
+	padding: 0;
+}
 
 /*HEADER*/
 .navigation-menu{
@@ -138,14 +141,18 @@ p{
 	margin-left: 30px;
 }
 
+.menu-item__link:hover{
+	color:#56a5dd;
+}
+
 .main-banner{
 	height: 100vh;
 	background-image: url('../img/banner/slider.jpeg');
+	background-position: center top;
 	background-size: cover;
 }
 
 .main-banner__description{
-	padding:0;
 	position: absolute;
 	top: 430px;
 }
@@ -161,7 +168,8 @@ p{
 	text-align: center;
 }
 
-.main-banner__content{
+.main-banner__link{
+	display: block;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
@@ -171,13 +179,17 @@ p{
 	margin: 65px 0 0 0;
 }
 
+.main-banner__link:hover{
+	border: 2px solid green;
+	border-radius: 10px;
+	color: green;
+}
+
 /*Services*/
 .services{
 	background-color: #e6e6e6;
-}
-
-.services__description{
-	margin-top: 120px;
+	padding-top: 120px;
+	padding-bottom: 45px;
 }
 
 .services__description .description__content{
@@ -222,7 +234,7 @@ p{
 	font-size: 16px;
 	line-height: 32px;
 	letter-spacing: 0;
-	margin: 25px 0 45px 0;
+	margin-top: 25px;
 }
 
 /*Portfolio*/
@@ -237,7 +249,7 @@ p{
 	margin-top: 40px;
 }
 
-.portfolio__items-list {
+.portfolio__itemsList {
 	margin-top: 35px;
 }
 
@@ -284,6 +296,7 @@ p{
 	bottom:0;
 	width: 100%;
 	height: 27%;
+	filter: opacity(0%);
 }
 
 .info__name{
@@ -313,6 +326,11 @@ p{
 	color:#00c0ff;
 }
 
+.team-members__list-item:hover .team-members__info{
+	animation: TeamMemberInfo_show 0.4s ease-in-out 1;
+	animation-fill-mode: forwards;
+}
+
 /*Review-Section*/
 
 .review{
@@ -328,11 +346,11 @@ p{
 	border-radius: 3px;
 }
 
-.review__slider-item-1 img{
+.review__sliderItem1 .sliderItem__image{
 	margin: 50px 0 0 0;
 }
 
-.review__slider-item-1 p{
+.review__sliderItem1 .sliderItem__content{
 	margin:15px 115px 115px;
 	font-size: 16px;
 	line-height: 32px;
@@ -340,17 +358,16 @@ p{
 }
 
 /*Partners*/
-.partners .partners-desc{
+.partners__desc{
 	margin-top: 110px;
 }
-.partners_item{
+.partners__item{
 	display: block;
 	margin:0;
 	padding:0;
 }
 
 /*Blog-section*/
-
 .blog__description{
 	margin: 115px 0 0 0;
 }
@@ -361,19 +378,19 @@ p{
 	margin-bottom: 120px;
 }
 
-.blog__list-item{
+.blog__listItem{
 	box-shadow: 0px 1px 20px 0px #bbbbbb;
 }
 
-.blog__list-item:hover{
+.blog__listItem:hover{
 	box-shadow: 0px 15px 15px 0px #bbbbbb;
 }
 
-.blog__item-description{
+.listItem__description{
 	background-color: #fff;
 }
 
-.blog__item-description h3{
+.listItem__description .description__heading{
 	text-align: start;
 	margin-top: 25px;
 	font-weight: 500;
@@ -382,7 +399,7 @@ p{
 	font-size: 24px;
 }
 
-.blog__item-description p{
+.listItem__description .description__text{
 	text-align: start;
 	color:#acacac;
 	margin-top: 25px;
@@ -432,18 +449,240 @@ p{
 	list-style:none;
 }
 
-.go-business__socials-item{
+.go-business__socialsItem{
 	margin: 0;
 	padding:0;
 }
 
-.go-business__socials-item a{
+.go-business__socialsItem a{
 	margin: 0 25px;
 	font-size: 18px;
 	color: #c0c0c0;
 	cursor:pointer;
 }
 
-.go-business__socials-item a:hover{
+.go-business__socialsItem a:hover{
 	color: green;
+}
+
+/*Animations---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------*/
+
+/*TeamMemberInfo_show*/
+@-webkit-keyframes TeamMemberInfo_show {
+	from { filter: opacity(0%); }
+	to { filter: opacity(100%); }
+}
+@-o-keyframes TeamMemberInfo_show {
+	from { filter: opacity(0%); }
+	to { filter: opacity(100%); }
+}
+@-moz-keyframes TeamMemberInfo_show {
+	from { filter: opacity(0%); }
+	to { filter: opacity(100%); }
+}
+@keyframes TeamMemberInfo_show {
+	from { filter: opacity(0%); }
+	to { filter: opacity(100%); }
+}
+
+/*Media Querries----------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1200px){
+
+	/*HEADER*/
+	.navigation-menu{
+		position: absolute;
+		z-index:2;
+		top:40px;
+	}
+
+	.menu-item__link{
+		font-size: 18px;
+		margin-left: 30px;
+	}
+
+	.main-banner{
+		background-position: center center;
+	}
+
+	.main-banner__description{
+		top: 40vh;
+	}
+
+	.main-banner__heading{
+		font-size: 50px;
+		line-height: 54px;
+		letter-spacing: 0.071em;
+	}
+
+	.main-banner__link{
+		font-size: 20px;
+		margin: 100px 0 0 0;
+	}
+
+	/*Services*/
+	.services{
+	padding-top: 50px;
+	padding-bottom: 40px;
+	}
+
+	.services__description .description__content{
+		margin-top: 40px;
+	}
+
+	.services___list{
+		margin-top: 30px;
+	}
+
+	.services__item{
+		margin-bottom: 50px;
+	}
+
+
+	/*Portfolio*/
+	.portfolio__description{
+		margin-top: 50px;
+	}
+
+	.portfolio__load-button{
+		margin: 40px 0 60px 0;
+	}
+
+	/*Review-Section*/
+
+	.review__slider{
+		margin: 40px 0 50px 0;
+	}
+
+	.review__sliderItem1 .sliderItem__content{
+		margin:15px 10px 45px;
+		font-size: 18px;
+		line-height: 27px;
+		letter-spacing: 0.025em;
+	}
+
+	/*Partners*/
+	.partners__desc{
+		margin-top: 20px;
+	}
+
+	/*Blog-section*/
+	.blog__description{
+		margin: 40px 0 0 0;
+	}
+
+	.blog__list{
+		margin-top: 20px;
+		margin-bottom: 45px;
+	}
+
+	/*Go-business*/
+
+	.go-business__heading{
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 576px){
+
+	/*HEADER*/
+	.navigation-menu{
+		position: absolute;
+		z-index:2;
+		top:20px;
+	}
+
+	.menu-item__link{
+		font-size: 16px;
+		margin-left: 30px;
+	}
+
+	.main-banner{
+		background-position: center center;
+	}
+
+	.main-banner__description{
+		top: 40vh;
+	}
+
+	.main-banner__heading{
+		font-size: 38px;
+		line-height: 40px;
+		letter-spacing: 0.0250em;
+	}
+
+	.main-banner__link{
+		font-size: 18px;
+		margin: 65px 0 0 0;
+	}
+
+	/*Services*/
+	.services{
+	padding-top: 30px;
+	padding-bottom: 35px;
+	}
+
+	.services__description .description__content{
+		margin-top: 25px;
+	}
+
+	.services___list{
+		margin-top: 20px;
+	}
+
+	.services__item{
+		margin-bottom: 30px;
+	}
+
+
+	/*Portfolio*/
+	.portfolio__description{
+		margin-top: 30px;
+	}
+
+	.portfolio__load-button{
+		margin: 20px 0 30px 0;
+	}
+
+	/*Review-Section*/
+
+	.review__slider{
+		margin: 40px 0 50px 0;
+	}
+
+	.review__sliderItem1 .sliderItem__content{
+		margin:15px 10px 45px;
+		font-size: 16px;
+		line-height: 22px;
+		letter-spacing: 0.025em;
+	}
+
+	/*Partners*/
+	.partners__desc{
+		margin-top: 20px;
+	}
+
+	/*Blog-section*/
+	.blog__description{
+		margin: 40px 0 0 0;
+	}
+
+	.blog__list{
+		margin-top: 20px;
+		margin-bottom: 45px;
+	}
+
+	/*Go-business*/
+
+	.go-business__heading{
+		margin-top: 50px;
+	}
 }
