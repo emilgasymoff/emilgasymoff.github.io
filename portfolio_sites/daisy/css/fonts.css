@@ -1,0 +1,109 @@
+@font-face{
+
+font-family: 'PFEncoreSansPro';
+
+src: url('../fonts/regular/PFEncoreSansPro-Regular.eot');
+
+src: url('../fonts/regular/PFEncoreSansPro-Regular.eot?iefix') format('eot'),
+
+url('../fonts/regular/PFEncoreSansPro-Regular.woff') format('woff'),
+
+url('../fonts/regular/PFEncoreSansPro-Regular.woff2') format('woff2'),
+
+url('../fonts/regular/PFEncoreSansPro-Regular.ttf') format('truetype'),
+
+url('../fonts/regular/PFEncoreSansPro-Regular.svg') format('svg');
+
+font-weight: 400;
+
+font-style: normal;
+
+}
+
+@font-face{
+
+font-family: 'PFEncoreSansPro';
+
+src: url('../fonts/thin/PFEncoreSansPro-Thin.eot');
+
+src: url('../fonts/thin/PFEncoreSansPro-Thin.eot?iefix') format('eot'),
+
+url('../fonts/thin/PFEncoreSansPro-Thin.woff') format('woff'),
+
+url('../fonts/thin/PFEncoreSansPro-Thin.woff2') format('woff2'),
+
+url('../fonts/thin/PFEncoreSansPro-Thin.ttf') format('truetype'),
+
+url('../fonts/thin/PFEncoreSansPro-Thin.svg') format('svg');
+
+font-weight: 100;
+
+font-style: normal;
+
+}
+
+@font-face{
+
+font-family: 'PFEncoreSansPro';
+
+src: url('../fonts/light/PFEncoreSansPro-Light.eot');
+
+src: url('../fonts/light/PFEncoreSansPro-Light.eot?iefix') format('eot'),
+
+url('../fonts/light/PFEncoreSansPro-Light.woff') format('woff'),
+
+url('../fonts/light/PFEncoreSansPro-Light.woff2') format('woff2'),
+
+url('../fonts/light/PFEncoreSansPro-Light.ttf') format('truetype'),
+
+url('../fonts/light/PFEncoreSansPro-Light.svg') format('svg');
+
+font-weight: 300;
+
+font-style: normal;
+
+}
+
+font-family{ 
+
+font-family: 'PFEncoreSansPro';
+
+src: url('../fonts/medium/PFEncoreSansPro-Medium.eot');
+
+src: url('../fonts/medium/PFEncoreSansPro-Medium.eot?iefix') format('eot'),
+
+url('../fonts/medium/PFEncoreSansPro-Medium.woff') format('woff'),
+
+url('../fonts/medium/PFEncoreSansPro-Medium.woff2') format('woff2'),
+
+url('../fonts/medium/PFEncoreSansPro-Medium.ttf') format('truetype'),
+
+url('../fonts/medium/PFEncoreSansPro-Medium.svg') format('svg');
+
+font-weight: 500;
+
+font-style: normal;
+
+}
+
+font-family{ 
+
+font-family: 'PFEncoreSansPro';
+
+src: url('../fonts/bold/PFEncoreSansPro-Medium.eot');
+
+src: url('../fonts/bold/PFEncoreSansPro-Medium.eot?iefix') format('eot'),
+
+url('../fonts/bold/PFEncoreSansPro-Medium.woff') format('woff'),
+
+url('../fonts/bold/PFEncoreSansPro-Medium.woff2') format('woff2'),
+
+url('../fonts/bold/PFEncoreSansPro-Medium.ttf') format('truetype'),
+
+url('../fonts/bold/PFEncoreSansPro-Medium.svg') format('svg');
+
+font-weight: bold;
+
+font-style: normal;
+
+}
