@@ -215,6 +215,8 @@ section{
 }
 
 .infoPannelItem__click{
+	font-size: 30px;
+	color: #fc635e;
 	cursor: pointer;
 	animation: clickToResume 1s ease infinite;
 }
@@ -330,11 +332,24 @@ section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: rgba(0,186,255,0.8);
+	background-color: rgba(0,186,255,0.95);
 	position:absolute;
 	z-index: -1;
 	margin: 0;
 	padding: 0;
+}
+
+.workExamples .information-list{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+.workExamples .information-list__item{
+	color: #fff;
+	text-align: justify;
+	margin:0;
+	padding:0;
 }
 
 .examplesItem__moreIcon{
@@ -344,7 +359,7 @@ section{
 
 .examples__item:hover .examplesItem__info{
 	z-index: +10;
-	animation: appear 1s ease 1;
+	animation: appear 0.5s ease 1;
 }
 
 
@@ -489,19 +504,19 @@ section{
 
 @-webkit-keyframes appear {
 	from {background-color:rgba(0,186,255,0.0);}
-	to { background-color: rgba(0,186,255,0.8); }
+	to { background-color: rgba(0,186,255,0.95); }
 }
 @-o-keyframes appear {
 	from { background-color:rgba(0,186,255,0.0); }
-	to { background-color: rgba(0,186,255,0.8); }
+	to { background-color: rgba(0,186,255,0.95); }
 }
 @-moz-keyframes appear {
 	from { background-color:rgba(0,186,255,0.0); }
-	to { background-color: rgba(0,186,255,0.8); }
+	to { background-color: rgba(0,186,255,0.95); }
 }
 @keyframes appear {
 	from { background-color:rgba(0,186,255,0.0); }
-	to { background-color: rgba(0,186,255,0.8); }
+	to { background-color: rgba(0,186,255,0.95); }
 }
 
 /*Socials Animations*/
