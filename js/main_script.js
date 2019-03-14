@@ -50,13 +50,19 @@ if (mql.matches) {
 	$('.infoPannel__item').addClass('wow fadeInRight');
 
 	// Анимирование секции "Used Technologies"
-	$('.technologiesPannel__item').attr('data-wow-delay','0.5s');
+	$('.technologiesPannel__item').attr('data-wow-delay','0.20');
 	$('.technologiesPannel__item').attr('data-wow-duration','1s');
 	$('.technologiesPannel__item').addClass('wow zoomIn');
 
 	// Анимирование секции "Work Examples"
 	$('.examples__item').attr('data-wow-duration','1s');
 	$('.examples__item').addClass('wow slideInRight');
+
+	// Анимирование секции "Contacts"
+	$('.contacts__phoneNumbers').attr('data-wow-duration','1s');
+	$('.contacts__phoneNumbers').addClass('wow fadeInRight');
+	$('.contacts .socials__list').attr('data-wow-duration','1s');
+	$('.contacts .socials__list').addClass('wow fadeInLeft');
 
 	// Добавление расстояния с низу дисплея к срабатыванию анимации
 	function add_data_wow_offset(){

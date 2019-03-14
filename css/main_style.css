@@ -71,7 +71,7 @@ section{
 	display:block;
 	background-color: white;
 	height: 4px;
-	width: 100%;
+	width: 70%;
 }
 
 .horizontalLine--dark{
@@ -173,9 +173,11 @@ section{
 
 /*About-Me---------------------------------------------------------------------*/
 .aboutMe{
-	background-image: url('../img/aboutMe/aboutMe_section_bg_image.jpg');
-	background-repeat: repeat;
-	background-color: #e5e5e5;
+	background-image: url('../img/aboutMe/Без названия.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-color: #fc635e;
 }
 
 .infoPannel{
@@ -192,9 +194,13 @@ section{
 	align-items: center;
 	align-content: center;
 	flex-grow: 1;
-	background-color: white;
-	border: 3px solid #fc635e;
+	background-color: rgba(255,255,255, 0.7);
+	border-radius: 10px;
 	padding: 20px 15px;
+}
+
+.infoPannel__item:hover{
+	background-color: rgba(255,255,255, 1);
 }
 
 .infoPannelItem__icon{
@@ -306,6 +312,7 @@ section{
 
 .workExamples{
 	min-height: 80vh;
+	background-color: #fff;
 }
 
 .workExaples__list{
