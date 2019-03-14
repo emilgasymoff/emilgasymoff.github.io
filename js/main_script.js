@@ -44,20 +44,20 @@ function H2_Heading_animate(){
 H2_Heading_animate()
 
 // Анимирование секции "Обо Мне"
-$('.infoPannel').attr('data-wow-duration','1s');
-$('.infoPannel').addClass('wow fadeInRight');
+$('.infoPannel__item').attr('data-wow-duration','1s');
+$('.infoPannel__item').addClass('wow fadeInRight');
 
 // Анимирование секции "Used Technologies"
-$('.technologiesPannel').attr('data-wow-delay','0.5s');
-$('.technologiesPannel').attr('data-wow-duration','1s');
-$('.technologiesPannel').addClass('wow zoomIn');
+$('.technologiesPannel__item').attr('data-wow-delay','0.5s');
+$('.technologiesPannel__item').attr('data-wow-duration','1s');
+$('.technologiesPannel__item').addClass('wow zoomIn');
 
 // Анимирование секции "Work Examples"
-$('.workExaples__list').attr('data-wow-duration','1s');
-$('.workExaples__list').addClass('wow slideInRight');
+$('.examples__item').attr('data-wow-duration','1s');
+$('.examples__item').addClass('wow slideInRight');
 
 // Добавление расстояния с низу дисплея к срабатыванию анимации
 function add_data_wow_offset(){
-	$('.wow').attr('data-wow-offset','170');
+	$('.wow').attr('data-wow-offset','160');
 }
 add_data_wow_offset();
