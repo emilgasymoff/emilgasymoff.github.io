@@ -11,6 +11,7 @@ Media;--------------------------------------------------------------------------
 	position: fixed;
 	left: 10px;
 	top: 20px;
+	z-index: 100;
 }
 .psd-download{
 	font-size: 20px;
