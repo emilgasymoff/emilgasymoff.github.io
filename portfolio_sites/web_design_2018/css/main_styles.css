@@ -6,6 +6,23 @@ Media;--------------------------------------------------------------------------
 
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+/*PSD-Download*/
+.psd-options{
+	position: fixed;
+	left: 10px;
+	top: 20px;
+}
+.psd-download{
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	background-color: #00c4ec;
+	border: 2px solid #fff;
+	border-radius: 4px;
+	padding: 7px 20px;
+}
 
 /*Preloader*/
 .preloader_area{
