@@ -37,7 +37,6 @@ h1, h2, h3, h4, h5, h6{
 
 /*Спецификации--------------------------------------------------------------*/
 body{
-	width: 1600px;
 	font-family: 'Nunito-sans',sans-serif;
 	margin: 0 auto;
 	padding:0;
@@ -107,7 +106,6 @@ header{
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 38px 75px 83px 75px;
-	position: relative;
 }
 
 nav{
@@ -426,7 +424,7 @@ nav{
 }
 
 .works-list{
-	max-height: 1770px;
+	height: 1770px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
