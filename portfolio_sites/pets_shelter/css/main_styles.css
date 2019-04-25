@@ -2,6 +2,26 @@
 основные стили;-------------------------------------
 animations;-----------------------------------------
 media-querries;-------------------------------------*/
+
+/*PSD-Download*/
+.psd-options{
+	position: fixed;
+	left: 10px;
+	top: 20px;
+	z-index: 100;
+}
+.psd-download{
+	font-size: 20px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	background-color: #00c4ec;
+	border: 2px solid #fff;
+	border-radius: 4px;
+	padding: 7px 20px;
+}
+
 /*Типография----------------------------------------------------------------*/
 p{	
 	font-family: 'Arial', sans-serif;
