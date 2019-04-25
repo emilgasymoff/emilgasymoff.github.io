@@ -45,7 +45,7 @@
 								<a class="nav-link nav-link--usedTechnologies" href="#usedTechnologies">Технологии</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link nav-link--workExamples" href="#workExamples">мои работы</a>
+								<a class="nav-link nav-link--workExamples" href="#workExamples">примеры работ</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link nav-link--contacts" href="#contacts">контакты</a>
@@ -101,13 +101,13 @@
 					<div class="infoPannel__item col-12 col-lg mx-0 mx-lg-2 my-2">
 						<i class="infoPannelItem__icon fas fa-user-alt"></i>
 						<h3 class="infoPannelItem__heading">Личная информация</h3>
-						<p class="infoPannelItem__content">Привет! Меня зовут Эмиль. Мне 22 года. Занимаюсь вёрсткой сайтов. Могу сверстать с PSD макета, а также редактировать уже готовые проекты по желанию заказчика. Взятые заказы сдаются строго в обещанные сроки. </p>
+						<p class="infoPannelItem__content">Привет! Меня зовут Эмиль. Мне 22 года. Занимаюсь WEB-программированием. Могу сверстать с PSD макета, а также редактировать уже готовые проекты по желанию заказчика. Взятые заказы сдаются строго в обещанные сроки. </p>
 					</div>
 					<div class="infoPannel__item col-12 col-lg mx-0 mx-lg-2 my-2">
 						<i class="infoPannelItem__icon fas fa-server"></i>
 						<h3 class="infoPannelItem__heading">Знания</h3>
 						<p class="infoPannelItem__content">
-							Владения такими языками как HTML, CSS, Javascript (+J-Query), PHP, а также СУБД MySQL. Способность работать с фреймворком Bootstrap и технологией FlexBox. Oпыт работы с графическим редактором PhotoShop CC.
+							Владения такими языками как HTML, CSS, Javascript (+J-Query, React.js), Ajax, PHP, а также СУБД MySQL. Навыки работы с Bootstrap, технологиями FlexBox и CSS Grid и CMS WordPress, Joomla, ModX. Oпыт работы с графическим редактором PhotoShop CC.
 						</p>
 					</div>
 					<div class="infoPannel__item col-12 col-lg mx-0 mx-lg-2 my-2">
@@ -116,9 +116,43 @@
 						<p class="infoPannelItem__content">
 							С более обширной информацией обо мне вы можете ознакомится в моем резюме, кликнув по значку загрузки.
 						</p>
-						<a href="download_files/CV_Web_Programmist_Gasymoff_Emil_multi-language.doc" download="">
+						<a href="download_files/CV_Web_Programmist_Gasymoff_Emil_multi-language.doc" data-toggle="modal" data-target="#select-CV-language">
 							<i class="infoPannelItem__click fas fa-download"></i>
 						</a>
+						<div class="modal fade" id="select-CV-language" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="exampleModalLabel">На каком языке скачать резюме?</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						        <div class="row d-flex justify-content-center">
+						        	<div class="col-3 px-3">
+						        		<a href="download_files/CV/CV_AZ.pdf" download="">
+						        			<img src="img/aboutMe/AZE-flag.png"class="w-100" alt="AZE">
+						        		</a>
+						        	</div>
+						        	<div class="col-3 px-3">
+						        		<a href="download_files/CV/CV_RU.pdf" download="">
+						        			<img src="img/aboutMe/RU-flag.png" class="w-100" alt="RU">
+						        		</a>
+						        	</div>
+						        	<div class="col-3 px-3">
+						        		<a href="download_files/CV/CV_EN.pdf" download="">
+						        			<img src="img/aboutMe/EN-flag.png" class="w-100" alt="EN">
+						        		</a>
+						        	</div>
+						        </div>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -179,7 +213,7 @@
 				<div class="row">
 					<div class="col col-lg-5 mx-0 mx-lg-auto d-flex flex-column align-items-center">
 						<span class="horizontalLine horizontalLine--dark"></span>
-						<h2 class="section__heading">
+						<h2 class="section__heading section__heading--white">
 							Примеры моих <br>работ
 						</h2>
 						<span class="horizontalLine horizontalLine--dark"></span>
@@ -192,9 +226,8 @@
 								<ul class="information-list">
 									<li class="information-list__item">Адаптивность: +</li>
 									<li class="information-list__item">Тип Вёрстки: Bootstrap</li>
-									<li class="information-list__item">Валидность: +</li>
-									<li class="information-list__item">Кроссбраузерность: +</li>
-									<li class="information-list__item">БЭМ: +</li>
+									<li class="information-list__item">Тип сайта: Статический</li>
+									<li class="information-list__item">Кроссбраузерность: Chrome/ Firefox/ <br>Opera/ Safari/ IE 9+</li>
 								</ul>
 							</div>
 							<img src="img/portfolio/sites_posters/web_design_2018.jpeg" class="w-100" alt="web_design_2019">
@@ -206,29 +239,53 @@
 								<ul class="information-list">
 									<li class="information-list__item">Адаптивность: -</li>
 									<li class="information-list__item">Тип Вёрстки: HTML/Css/js</li>
-									<li class="information-list__item">Валидность: +</li>
-									<li class="information-list__item">Кроссбраузерность: +</li>
-									<li class="information-list__item">БЭМ: +</li>
+									<li class="information-list__item">Тип сайта: Статический</li>
+									<li class="information-list__item">Кроссбраузерность: Chrome/ Firefox/ <br>Opera/ Safari/ IE 9+</li>
 								</ul>
 							</div>
 							<img src="img/portfolio/sites_posters/Daisy.jpg" class="w-100" alt="daisy">
 						</a>
 					</div>
 					<div class="examples__item col-12 col-lg mx-lg-2 my-2">
+						<a href="portfolio_sites/pets_shelter/index.html" target="_blank">
+							<div class="examplesItem__info">
+								<ul class="information-list">
+									<li class="information-list__item">Адаптивность: +</li>
+									<li class="information-list__item">Тип Вёрстки: Bootstrap</li>
+									<li class="information-list__item">Тип сайта: Статический</li>
+									<li class="information-list__item">Кроссбраузерность: Chrome/ Firefox/ <br>Opera/ Safari/ IE 9+</li>
+								</ul>
+							</div>
+							<img src="img/portfolio/sites_posters/Cozy-house.jpg" class="w-100" alt="cozy-house">
+						</a>
+					</div>
+					<div class="w-100 d-none d-lg-block"></div>
+					<div class="examples__item col-12 col-lg mx-lg-2 my-2">
 						<a href="portfolio_sites/Travel_to_London/index.html" target="_blank">
 							<div class="examplesItem__info">
 								<ul class="information-list">
 									<li class="information-list__item">Адаптивность: -</li>
 									<li class="information-list__item">Тип Вёрстки: HTML/CSS</li>
-									<li class="information-list__item">Валидность: +</li>
-									<li class="information-list__item">Кроссбраузерность: +</li>
-									<li class="information-list__item">БЭМ: -</li>
+									<li class="information-list__item">Тип сайта: Статический</li>
+									<li class="information-list__item">Кроссбраузерность: Chrome/ Firefox/ <br>Opera/ Safari/ IE 9+</li>
 								</ul>
 							</div>
 							<img src="img/portfolio/sites_posters/Travel_to_london.jpeg" class="w-100" alt="travel_to_london">
 						</a>
 					</div>
-					<div class="w-100 d-none d-lg-block"></div>
+					<div class="examples__item col-12 col-lg mx-lg-2 my-2">
+						<a href="portfolio_sites/sublime/index.html" target="_blank">
+							<div class="examplesItem__info">
+								<ul class="information-list">
+									<li class="information-list__item">Адаптивность: -</li>
+									<li class="information-list__item">Тип Вёрстки: Pixel Perfct</li>
+									<li class="information-list__item">Тип сайта: Статический</li>
+									<li class="information-list__item">Кроссбраузерность: Chrome/ Firefox/ <br>Opera/ Safari/ IE 9+</li>
+								</ul>
+							</div>
+							<img src="img/portfolio/sites_posters/sublime.jpg" class="w-100" alt="sublime">
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>

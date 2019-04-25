@@ -231,7 +231,7 @@ section{
 /*Header----------------------------------------------------------------*/
 .header{
 	background-image: url('../img/Header/main-bg.jpeg');
-	background-size: 100% auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 26px 0 20px;
 }
@@ -387,7 +387,8 @@ section{
 /*Join Us-------------------------------------------------------------*/
 .join-us{
 	background-image: url('../img/JoinUs/expand_bg.jpeg');
-	background-size: 100% auto;
+	background-size: cover;
+	background-position: center center;
 	padding: 90px 0 20px 0;
 }
 

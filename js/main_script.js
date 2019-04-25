@@ -47,7 +47,7 @@ if (mql.matches) {
 
 	// Анимирование секции "Обо Мне"
 	$('.infoPannel__item').attr('data-wow-duration','1s');
-	$('.infoPannel__item').addClass('wow fadeInRight');
+	$('.infoPannel__item').addClass('wow zoomIn');
 
 	// Анимирование секции "Used Technologies"
 	$('.technologiesPannel__item').attr('data-wow-delay','0.20');
@@ -56,13 +56,13 @@ if (mql.matches) {
 
 	// Анимирование секции "Work Examples"
 	$('.examples__item').attr('data-wow-duration','1s');
-	$('.examples__item').addClass('wow slideInRight');
+	$('.examples__item').addClass('wow zoomIn');
 
 	// Анимирование секции "Contacts"
 	$('.contacts__phoneNumbers').attr('data-wow-duration','1s');
-	$('.contacts__phoneNumbers').addClass('wow fadeInRight');
+	$('.contacts__phoneNumbers').addClass('wow zoomIn');
 	$('.contacts .socials__list').attr('data-wow-duration','1s');
-	$('.contacts .socials__list').addClass('wow fadeInLeft');
+	$('.contacts .socials__list').addClass('wow zoomIn');
 
 	// Добавление расстояния с низу дисплея к срабатыванию анимации
 	function add_data_wow_offset(){

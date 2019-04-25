@@ -1,0 +1,162 @@
+/*Содержание файла:
+Preloader;----------------------------------------------------------------------
+Styles;-------------------------------------------------------------------------
+Animations;---------------------------------------------------------------------
+Media;--------------------------------------------------------------------------*/
+
+/*Типография*/
+a,p,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+}
+
+a{
+	color: #000;
+	text-transform: 0;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #000;
+	text-transform: 0;
+	text-decoration: none;
+}
+
+a:active{
+	color: #000;
+	text-transform: 0;
+	text-decoration: none;
+}
+
+/*Спецификации*/
+body{
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'SDFTTT',sans-serif;
+	font-weight: 400;
+	margin:0;
+	padding: 0 auto;
+}
+
+div{
+	box-sizing: border-box;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+.menu{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+.menu__item{
+	margin: 0 10px 0 25px;
+}
+
+.menu .item__link{
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.section-heading{
+	width: 100%;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.section-heading--black{
+	background-color: #000;
+	color:#fff;
+}
+
+.section-heading--blue{
+	background-color: #112b86;
+	color:#fff;
+}
+
+/*Header--------------------------------------------------------------------------*/
+.header{
+	background-image: url('../img/header/header-bg.jpg');
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	padding: 10px 0;
+}
+
+
+
+/*Main-banner--------------------------------------------------------------------*/
+.main-banner{
+}
+
+.last-article__info{
+	display:block;
+	position: absolute;
+	z-index: 3;
+	width: 90%;
+	background-color: rgba(255,255,255,.6);
+	cursor: auto;
+	bottom: 7%;
+	padding: 15px 20px;
+}
+
+.main-banner .last-article-title{
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.main-banner .last-article-description{
+	font-size: 18px;
+	font-weight: 500;
+	text-align: justify;
+	line-height: 24px;
+	color: #000;
+}
+
+.main-banner .popular-articles__item{
+	display: block;
+	position: relative;
+}
+
+.main-banner .popular-article__info{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index:3;
+	height: 40%;
+	width:100%;
+	background-color: rgba(255,255,255,.6);
+	bottom: 0;
+	padding: 0 5%;
+}
+
+/*UCL-info----------------------------------------------------------------------------*/
+
+.UCL-info{
+	padding: 10px 0;
+}
+
+.footer{
+	background-image: url('../img/header/header-bg.jpg');
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	padding: 10px 0;
+}

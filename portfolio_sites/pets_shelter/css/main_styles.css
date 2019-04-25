@@ -1,0 +1,326 @@
+/*Содержимое файла: 
+основные стили;-------------------------------------
+animations;-----------------------------------------
+media-querries;-------------------------------------*/
+/*Типография----------------------------------------------------------------*/
+p{	
+	font-family: 'Arial', sans-serif;
+	width: 100%; /*для IE*/
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin:0;
+	padding:0;
+}
+
+/*Спецификации----------------------------------------------------------------*/
+
+body{
+	font-family: 'Georgia', sans-serif;
+	margin:0;
+	padding:0;
+}
+
+div{
+	box-sizing: border-box;
+}
+
+.content__heading{
+	font-size: 35px;
+	font-weight: 400;
+	letter-spacing: 0.06em;
+	line-height: 45px;
+	white-space: nowrap;
+}
+
+.content__heading--white{
+	color:#fff;
+}
+
+.button{
+	display: inline-block;
+	padding: 14px 44px;
+	border: 2px solid #f1cdb3;
+	border-radius: 30px;
+	background-color: rgba(0,0,0,0);
+	font-size: 17px;
+	letter-spacing: 0.06em;
+}
+
+.button--brown{
+	background-color: #f1cdb3;
+}
+
+/*Header----------------------------------------------------------------------*/
+.header{
+	background-image: url(../img/Header-background.jpeg);
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	padding: 60px 0 265px 0;
+}
+
+nav {
+	padding:0;
+	margin:0;
+}
+
+.menu-toggler{
+	display: none;
+	z-index: 200;
+	border: 0px;
+	cursor: pointer;
+}
+
+.menu{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	list-style: none;
+	padding:0;
+}
+
+.menu__item{
+	padding: 0;
+	margin:0 0 0 35px;
+}
+
+.item__link{
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
+	white-space: nowrap;
+	color:#fff;
+	padding-bottom: 3px;
+}
+
+.item__link:hover{
+	color: #fff;
+	border-bottom: 3px solid #f1cdb3;
+}
+
+.header .content{
+	margin: 240px 0 0 0;
+	padding:0;
+}
+
+.header .content__heading{
+	font-size: 44px;
+	font-weight: 400;
+	line-height: 55px;
+	letter-spacing: 0.06em;
+	color: #fff;
+}
+
+.header .content__description{
+	font-size: 15px;
+	line-height: 24px;
+	letter-spacing: 0em;
+	color:#fff;
+	margin: 28px 0 0 0;
+}
+
+.make-a-friend-button{
+	margin-top: 42px;
+}
+/*About shelter -----------------------------------------------------------*/
+.about-shelter{
+	padding: 90px 0 100px 0;
+}
+
+.about-shelter .pets-image{
+	padding: 0 0 0 70px;
+}
+
+.about-shelter .content{
+	padding: 25px 0 0 0;
+}
+
+.about-shelter .content__description{
+	width: 430px;
+	font-size: 15px;
+	line-height: 24px;
+	margin-top: 30px;
+}
+
+/*Our-friends-------------------------------------------------------------*/
+.our-friends{
+	background-color: #f6f6f6;
+	padding: 60px 0 80px 0;
+}
+
+.our-friends .content__heading{
+	text-align: center;
+}
+
+.pets-list{
+	padding: 55px 0 100px 0;
+}
+
+.pets-info{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pets-info__title{
+	font-size: 20px;
+	letter-spacing: 0.06em;
+	line-height: 45px;
+	padding: 20px 0 10px 0;
+}
+
+.pets-info__button:hover{
+	background-color: #f1cdb3;
+}
+
+/*Help-us-----------------------------------------------------------------*/
+.help-us{
+	padding: 50px 0 0 0;
+}
+
+.help-us .content__heading{
+	text-align: center;
+}
+
+.help-list{
+	margin: 68px 0 70px 0;
+}
+
+.help-list__second-line{
+	margin-top: 75px;
+}
+
+.helps-type{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.helps-type__title{
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0.06em;
+	line-height: 24px;
+	margin: 22px 0 0 0; 
+}
+
+/*In-addition------------------------------------------------------------*/
+.in-addition{
+	padding: 70px 0 65px 0;
+}
+
+.donations-dog-image{
+	display: block;
+	height:100%;
+	width: 100%;
+	padding-top: 30px;
+}
+
+.donation-number{
+	width: 320px;
+	font-family: 'Times New Roman',sans-serif;
+	font-size: 20px;
+	letter-spacing: 0.05em;
+	background-color: #f1cdb3;
+	border-radius: 8px;
+	margin-top: 55px;
+	padding:12px 14px;
+}
+
+.credit-card{
+	line-height: 45px;
+	padding: 0 13px 0 0;
+}
+
+.in-addition .content__description{
+	font-size: 12px;
+	font-style: italic;
+	line-height: 18px;
+	color:#b2b2b2;
+	margin-top: 30px;
+}
+
+/*Footer----------------------------------------------------------------*/
+.footer{
+	background-image: url('../img/footer-bg.jpeg');
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 70px 0 65px 0;
+}
+
+.footer .content__heading{
+	white-space: normal;
+}
+
+.footer .contact-info{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	font-family: 'Times New Roman',sans-serif;
+	font-size: 20px;
+	letter-spacing: 0.06em;
+	line-height: auto;
+	color: #fff;
+}
+
+.contact-info{
+	margin-top: 35px;
+}
+
+.location-2{
+	margin-top: 15px;
+}
+
+.contact-info__image{
+	padding-right: 15px;
+}
+
+/*OUR_PETS page--------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------*/
+
+/*HEADER --------------------------------------------------------------------------*/
+.our-pets-header{
+	padding: 30px 0;
+}
+
+.our-pets-header .item__link{
+	font-family: 'Arial', sans-serif;
+	font-size: 15px;
+	color:#000;
+	padding-bottom: 3px;
+}
+
+.our-pets-header .item__link:hover{
+	color: #000;
+	border-bottom: 3px solid #f1cdb3;
+}
+
