@@ -32,22 +32,29 @@ $('.orderButton').click(function(){
 // Работа с WOW.js-----------------------------------------------------------------------------------
 
 	// Анимация для разрешения экрана с минимальной шириной 1000px--------------------------------------
-var mql = window.matchMedia('all and (min-width: 1000px)');
+var mql = window.matchMedia('all and (min-width: 990px)');
 if (mql.matches) {
-	// Добавление анимации к заголовку секции и полоскам над и под ним
+	// Добавление анимации к кнопке заказа
+	function order_button_animate(){
+		$('.orderButton').addClass('wow zoomIn');
+	}
+	order_button_animate();
+	// Добавление анимации к заголовку секции и полоскам над и под ними
 	function Heading_Horizontal_Lines_animate(){
-		$('.horizontalLine').addClass('wow fadeInRight');
+		$('.horizontalLine').addClass('wow zoomIn');
 	}
 	Heading_Horizontal_Lines_animate();
 
 	function H2_Heading_animate(){
-		$('h2.section__heading').addClass('wow fadeInLeft');
+		$('h2.section__heading').addClass('wow zoomIn');
 	}
-	H2_Heading_animate()
+	H2_Heading_animate();
 
 	// Анимирование секции "Обо Мне"
 	$('.infoPannel__item').attr('data-wow-duration','1s');
-	$('.infoPannel__item').addClass('wow zoomIn');
+	$('.aboutMe .presonal-Info').addClass('wow fadeInLeft');
+	$('.aboutMe .resume').addClass('wow fadeInRight');
+	$('.aboutMe .skills').addClass('wow zoomIn');
 
 	// Анимирование секции "Used Technologies"
 	$('.technologiesPannel__item').attr('data-wow-delay','0.20');
